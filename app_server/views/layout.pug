@@ -1,7 +1,29 @@
 doctype html
 html
   head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/all.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    nav.navbar.fixed-top.navbar-expand-md.navbar-light
+      .container
+        a.navbar-brand(href='/') Wifi Hotspot Locator
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarMain')
+          span.navbar-toggler-icon
+        #navbarMain.navbar-collapse.collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item
+              a.nav-link(href='/about/') About
+
+    .container.content
+      block content
+
+      footer
+        .row
+          .col-12
+            small &copy; Wifi Hotspot Locator- Ravi S Singh 2020
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js", integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=", crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.2/umd/popper.min.js", integrity="sha512-Jen3K+iRN4thSYDEyHwUGYFxNslAUCTV9P/g0k836eaoq/tplAUCzRPUyDxKUjBlKdJhamW7S3u7NWSGEEdIQw==", crossorigin="anonymous")
+    script(src='/javascripts/bootstrap.min.js')

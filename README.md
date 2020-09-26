@@ -8,5 +8,9 @@
 
 ## Setup GitHub for automated deployment when code has been chedked-in into Github (Connect this app to GitHub to enable code diffs and deploys.)
 
+## Views in Epress using PUG and Bootstrap
+## Tie routes to view using controller
+## Passing Data from controller to view
+
 
 
